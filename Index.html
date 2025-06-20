@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tức Bóng Đá</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚽ Tin Tức Bóng Đá</h1>
+            <p class="subtitle">Cập nhật tin tức và kết quả trận đấu mới nhất</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" id="searchBox" placeholder="🔍 Tìm kiếm đội bóng...">
+            <select class="filter-select" id="competitionFilter">
+                <option value="">Tất cả giải đấu</option>
+            </select>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <div>Đang tải dữ liệu...</div>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="matchesContainer" class="matches-grid"></div>
+
+        <div id="noMatches" class="no-matches" style="display: none;">
+            <h3>🚫 Không tìm thấy trận đấu nào</h3>
+            <p>Thử thay đổi bộ lọc hoặc từ khóa tìm kiếm</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
